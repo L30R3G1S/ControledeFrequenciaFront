@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form id="loginForm" autocomplete="off" class="login">
+              <div class="logo">
+                <img src="img/image.png" alt="NPEgroup" />
+              </div>
+              <div class="heading">
+                <h2>Bem Vindo(a)</h2>
+              </div>
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  id="username"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Usuário</label>
+              </div>
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  id="password"
+                  minlength="8"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Senha</label>
+              </div>
+              <input type="submit" value="Entrar" class="sing-btn" />
+              <p
+                id="errorMessage"
+                class="text"
+                style="color: red; display: none"
+              >
+                Usuário ou senha inválidos.
+              </p>
+              <p class="text">
+                Esqueceu sua senha ou seus dados de login ?
+                <a href="#">obter ajuda</a>
+              </p>
+            </form>
+          </div>
+          <div class="carousel">
+            <div class="image-wrapper">
+              <img
+                src="img/Development focus-bro.png"
+                class="image"
+                alt=""
+                href="https://storyset.com/business"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
