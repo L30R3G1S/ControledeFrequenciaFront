@@ -10,11 +10,11 @@ inputs.forEach((inp) => {
   });
 });
 
-// login.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const token = localStorage.getItem("token");
   if (token) {
-    // Se já estiver logado, manda direto pra home
+    
     window.location.href = "home.html";
     return;
   }
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          login: username,     // <- backend espera 'login'
+          login: username,     
           password: password
         }),
       });
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem("token", data.token);
-        window.location.href = "home.html"; // redireciona após login
+        window.location.href = "home.html"; 
       } else {
         errorMsg.textContent = "Usuário ou senha incorretos.";
         errorMsg.style.display = "block";
